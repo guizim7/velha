@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <title>
+        Jogo da velha
+    </title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="velha/styles/velha.css">
+    <link rel="stylesheet" href="velha/styles/reset.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <h1 class="tituloTxt">
+            SEJAM BEM-VINDOS AO JOGO DA VELHA <br>
+        </h1>
+    </nav>
+    <div class="container">
+        <div class="container1-quadrado">
+            <div id="1" class="quadrado" onclick="escolherQuadrado('1')">-</div>
+            <div id="2" class="quadrado" onclick="escolherQuadrado('2')">-</div>
+            <div id="3" class="quadrado" onclick="escolherQuadrado('3')">-</div>
+        </div>
+
+        <div class="container2-quadrado">
+            <div id="4" class="quadrado" onclick="escolherQuadrado('4')">-</div>
+            <div id="5" class="quadrado" onclick="escolherQuadrado('5')">-</div>
+            <div id="6" class="quadrado" onclick="escolherQuadrado('6')">-</div>
+        </div>
+        <div class="container3-quadrado">
+            <div id="7" class="quadrado" onclick="escolherQuadrado('7')">-</div>
+            <div id="8" class="quadrado" onclick="escolherQuadrado('8')">-</div>
+            <div id="9" class="quadrado" onclick="escolherQuadrado('9')">-</div>
+        </div>
+    </div>
+    <div class="container-pai">
+        <div class="container-jogadores">
+            <div class="jogador jogador1">
+                <img class="jogador-icon" src="velha/img/jogador1.png" alt="Jogador 1">
+                <p>Jogador 1</p>
+                <p class="peca-jogador"></p>
+            </div>
+            <div class="jogador jogador2">
+                <img class="jogador-icon" src="velha/img/jogador2.png" alt="Jogador 2">
+                <p>Jogador 2</p>
+                <p class="peca-jogador"></p>
+            </div>
+        </div>
+        <div class="container-info-jogadores">
+            <div class="jogador1">
+                <label>
+                    VEZ DA PEÇA:
+                </label>
+                <label id="jogador-selecionado">
+                </label>
+            </div>
+            <div class="vencedor">
+                <label>VENCEDOR:</label>
+                <label id="vencedor-selecionado">
+                </label>
+            </div>
+            <div class="button-class">
+                <button onclick="reiniciar()">
+                    RENINCIAR
+                </button>
+            </div>
+        </div>
+    </div>
+<body style="background-image: url('velha/img/tuégay.webp'); 
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center 5 px;">
+
+</body>
+<script src="velha/scripts/velha.js"></script>
+</html>
